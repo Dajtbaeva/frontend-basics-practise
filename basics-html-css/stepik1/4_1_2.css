@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*далее должны идти свойства в соответствие с заданием*/
+
+p {
+  padding-top: 80px; /*смещаем текст вниз 80px*/
+  color: #110301;
+  font-size: 14px;
+  text-align: center; /*центрирование текста*/
+}
+
+#title {
+  padding-top: 125px; /*смещаем текст вниз 125px*/
+  color: #e3d1b8;
+  font-size: 40px;
+  text-align: center; /*центрирование текста*/
+}
+
+.container {
+  background: url("https://images.unsplash.com/photo-1637085046560-43cc153c86e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"); /*фоном контейнера станет изображение*/
+  width: 300px; /*ширина блока*/
+  height: 300px; /*высота блока*/
+  background-position: 40% 10%; /*задает начальное положение фонового изображения*/
+}

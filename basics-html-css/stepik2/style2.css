@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: "Exo 2";
+  font-style: normal;
+}
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0a97b3;
+}
+.menu {
+  display: flex;
+  justify-content: space-between; /*раскидываем логотип и меню по разным краям*/
+  align-items: center; /*размещаем по центру*/
+  box-shadow: 00px 4px 7px 0px #0c6cb140;
+}
+.menu_logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: gold;
+  padding: 35px 40px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.menu__ul {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center; /*размещаем по центру меню*/
+}
+.menu__link {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.menu__link:hover {
+  color: gold;
+}
+.menu_call {
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 40px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12.5px;
+}

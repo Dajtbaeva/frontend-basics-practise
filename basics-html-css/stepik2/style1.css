@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+.menu {
+  display: flex;
+  justify-content: space-between; /*раскидываем логотип и меню по разным краям*/
+  align-items: center; /*размещаем по центру*/
+  box-shadow: 00px 4px 7px 0px #81818140;
+}
+.menu__ul {
+  list-style: none;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center; /*размещаем по центру меню*/
+}
+.menu__link {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.menu__link:hover {
+  color: #05a88d;
+}
+.menu__logo {
+  color: #05a88d;
+  font-weight: bold;
+  text-decoration: none;
+  /* margin-right: 250px; */
+  font-size: 24px;
+  line-height: 29px;
+}
+.menu__actions {
+  margin-right: 60px;
+}
+.menu__signup {
+  color: #05a88d;
+  text-decoration: none;
+  border: 1px solid #05a88d;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 12.5px;
+  margin: 40px;
+}
+.menu__login {
+  color: #05a88d;
+  text-decoration: none;
+}
