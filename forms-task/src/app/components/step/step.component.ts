@@ -8,6 +8,7 @@ import { Status, Step } from 'src/app/models/models';
 })
 export class StepComponent implements OnInit {
   steps: Step[] = [];
+  currentStep = 2;
 
   ngOnInit(): void {
     this.initSteps();
@@ -46,5 +47,15 @@ export class StepComponent implements OnInit {
         res = 'inactive';
     }
     return res;
+  }
+
+  next() {
+    let index = this.steps.findIndex((el) => el.Id == this.currentStep);
+    this.steps[index].Status = Status.Done;
+    if (index < this.steps.length - 1) {
+      ++index;
+      this.currentStep = this.steps[index].Id;
+      this.steps[index].Status = Status.Active;
+    }
   }
 }
