@@ -1,0 +1,40 @@
+$primary-color: #2f80ed;
+$secondary-color: #e0e0e0;
+.steps,
+.step__point {
+  display: flex;
+  justify-content: space-between;
+}
+.step {
+  flex: 1;
+  margin-top: auto;
+}
+.point {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: $secondary-color;
+  border: 1px solid transparent;
+}
+.active {
+  .point {
+    border: 1px solid $primary-color;
+  }
+}
+.done {
+  .point {
+    background-color: $primary-color;
+  }
+}
+.inactive {
+  // .point{
+  // }
+}
+.pre-line,
+.post-line {
+  width: 100%;
+  height: 1px;
+  background-color: $secondary-color;
+  margin-top: 18px;
+}

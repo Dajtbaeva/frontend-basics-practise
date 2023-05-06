@@ -1,1 +1,14 @@
-<p>step works!</p>
+<div class="steps">
+  <div
+    class="step"
+    *ngFor="let step of steps"
+    [ngClass]="getClassName(step.Status)"
+  >
+    <div class="step__header">{{ step.Header }}</div>
+    <div class="step__point">
+      <div class="pre-line"></div>
+      <div class="point"></div>
+      <div class="post-line"></div>
+    </div>
+  </div>
+</div>
