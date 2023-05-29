@@ -11,16 +11,29 @@
   <body>
     <!-- ul>li*6>a{item$} -->
     <!-- <h1 class="text-3xl font-bold underline text-indigo-500">Hello world!</h1> -->
-    <header class="mt-10 pb-20 border-b-red-900 border-dashed">
+    <header class="px-2 border-b">
       <!-- mx-10 py-5 -->
+      <!-- mt-10 pb-20 border-b-8 border-b-red-900 border-dashed -->
       <a class="uppercase font-bold text-red-800 underline" href="#">WebDev</a>
       <nav>
         <ul class="text-gray-500 font-semibold">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="inline-block py-3 px-2" href="#">Home</a></li>
+          <li><a class="inline-block py-3 px-2" href="#">About</a></li>
+          <li><a class="inline-block py-3 px-2" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <div>
+        <div class="py-4 overflow-y-auto whitespace-nowrap">
+          <a class="text-gray-600" href="#">Home</a>
+          <span class="mx-2 text-gray-500">&gt;</span>
+          <a class="text-gray-600" href="#">News</a>
+          <span class="mx-2 text-gray-500">&gt;</span>
+          <a class="text-gray-600" href="#">Tech</a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
